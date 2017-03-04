@@ -1,15 +1,18 @@
 function setText(selector, text) {
-	/*
-		`selector` is string with CSS-like selector
-		`text` - is just string with text we want to change
-	*/
 
-	// Write your code here
+
+	var x = document.querySelector(selector);
+	x.innerHTML = text;
 }
 
 
 function setTextAll(selector, text) {
-	// Write your code here
+	
+	var y = document.querySelectorAll(selector);
+	y.forEach(function(elem){
+		elem.innerHTML = text;
+	})
+
 }
 
 
